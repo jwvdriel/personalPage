@@ -1,0 +1,277 @@
+:root {
+  --mainFont: "Public Sans", sans-serif;
+  --paragraph-colors: #959595;
+  --headings-fonts: 8rem;
+  --main-width: 90%;
+}
+
+body {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--mainFont);
+  background-color: #000;
+  color: #fff;
+  min-height: 100vh;
+}
+
+/* ! heading section */
+
+.heading {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: end;
+}
+
+.main-heading h1 {
+  font-size: var(--headings-fonts);
+  text-transform: uppercase;
+  width: 80%;
+  line-height: 7rem;
+  margin: 2.5rem 0 0 0;
+}
+
+.heading h2 {
+  margin: 0 0 0.2rem 2rem;
+  width: 25%;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.intro img {
+  width: 99%;
+  margin-top: 2.5rem;
+  height: 500px;
+  object-fit: cover;
+}
+
+.intro p {
+  margin: 2.5rem 0 0 2rem;
+  color: var(--paragraph-colors);
+  line-height: 1.6rem;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+/* ! end heading section */
+
+/* ! experience section */
+
+.experience {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.experience h2 {
+  font-size: var(--headings-fonts);
+  text-transform: uppercase;
+  margin: 4rem 0 0 0;
+  grid-column: 1 / 3;
+  width: 100%;
+}
+
+.left-image {
+  width: 100%;
+}
+
+.left-under-image {
+  grid-column: 1/3;
+}
+
+.right-side-grid {
+  grid-column: 3 / 4;
+}
+
+.right-image {
+  width: 100%;
+  margin: 3rem 0 0;
+  height: 803px;
+  object-fit: fill;
+}
+
+.project-details {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+}
+
+.project-description {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.project-text {
+  line-height: 1.5rem;
+}
+
+.project-text p {
+  margin: 0 0 0 1rem;
+}
+
+.project-text p:first-child {
+  text-transform: uppercase;
+}
+
+.year-made {
+  color: var(--paragraph-colors);
+}
+
+hr {
+  margin: 2.5rem 0 2rem 0;
+  border: 1px solid #fff;
+}
+
+.experience-2 {
+  display: grid;
+  grid-gap: 0 2rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.image-middle {
+  grid-column: 2 / 4;
+}
+
+.right-under-image {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  margin-top: 10rem;
+}
+
+/* ! end experience section */
+
+/* ! bio section */
+#bio {
+  margin-top: 5rem;
+}
+
+#bio article {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0 2rem;
+}
+
+#bio article p {
+  grid-column: 1/ 3;
+  font-size: 4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: -2px;
+}
+
+#bio article img {
+  width: 100%;
+  grid-column: 3/6;
+  height: 56.25rem;
+}
+
+/* ! end bio section */
+
+/* ! skills and education */
+#skills {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#skills img {
+  width: 100%;
+}
+
+.education {
+  letter-spacing: 2px;
+}
+
+.education p:nth-child(odd) {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.education p:nth-child(even) {
+  color: var(--paragraph-colors);
+  margin-top: 0;
+}
+
+#skills h2 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.skills li {
+  text-transform: capitalize;
+  color: var(--paragraph-colors);
+  font-size: 1.1rem;
+}
+
+.skills ul {
+  padding: 0 0 0 20px;
+}
+
+/* ! end skill, education */
+
+/* ! contact */
+#contact {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 5rem 0 2rem 0;
+}
+
+.adress {
+  grid-column: 1/3;
+}
+
+.contact-image {
+  grid-column: 3/6;
+}
+
+.contact-image img {
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  grid-column: 1/3;
+}
+
+.address h2 {
+  font-size: 11rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 0 0;
+  line-height: 155px;
+}
+
+.naw-data {
+  margin-bottom: 1.5rem;
+}
+
+.naw-data p:nth-child(even) {
+  text-transform: uppercase;
+  color: var(--paragraph-colors);
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.naw-data p:nth-child(odd) {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin: 1rem 0 0 0;
+}
